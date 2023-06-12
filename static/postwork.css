@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+:root {
+    --primary-text-color: #171717;
+    --secondary-text-color: #E46600;
+    --accent-color: #FFD12D;
+    --accent-color-dark: #6B5102;
+    --padding-inline-section: 20px;
+    --background-color: #FFFFFF;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+
+   background: linear-gradient(to bottom, rgba(242, 156, 23, 0.5) 0%, rgba(255, 209, 45,0.7) 100%), url("static\\woman.jpg") ;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
+   height: 800px;
+     /* background: linear-gradient(to bottom,#F29C17,#F9B722,#FFD12D , url("static\download.jfif") ; */
+
+
+   
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  ul {
+    list-style: none;
+  }
+  /* utility classes */
+  .fle{
+    display: flex;
+    align-items: center;
+  }
+
+  /* nav bar */
+  .main-nav {
+    /* margin-top: 5px; */
+    justify-content: space-between;
+    max-width: 2000px;
+  }
+  .hover-link {
+    height: 30px;
+    color: var(--accent-color-dark);
+  }
+  .hover-link:hover{
+    color: var(--secondary-text-color);
+    transition-property: 0.2s ease-out;
+  }
+  .primary-button {
+    height: 30px;
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+  }
+  .primary-button:hover{
+    background-color: var(--secondary-text-color);  
+     color: var(--accent-color);
+  }
+  .secondary-button{
+    height: 30px;
+
+    border: 0.5px solid var(--accent-color-dark);
+    border-radius: 6px;
+    font-weight: bold;
+    color: var(--accent-color-dark);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+  }
+  .secondary-button:hover {
+    
+      background-color: var(--secondary-text-color);
+      color: var(--accent-color);
+  }
+  .main-nav {
+      box-shadow: 0px 2px 3px var(--accent-color-dark);
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #FFFFFF;
+  }
+  .company-logo img {
+    width: auto;
+    height: 100px;
+    margin-left: 10px;
+  }
+  .nav-links {
+    flex-basis: 730px;
+    justify-content: space-between;
+    font-weight:550;
+    font-size: 20px;
+  }
+  .nav-links ul{
+    justify-content: end;
+    gap: 30px;
+  }
+/*nav nar*/
+
+
+.container{
+     margin-bottom: 30px;
+    max-width: 1000px;
+    /* background: linear-gradient(to bottom ,#F9B722,#FCC428,#FFCE2C,#FFD12D); */
+    border: solid 3px var(--secondary-text-color);
+    border-radius: 10px;
+    background-color: var(--primary-text-color);
+    margin-inline: auto;   /* to give left right margin ,auto diya toh container will be in center */
+    padding-inline:20px ; /*space left right se box ke andar,space of 20px*/
+}
+.text{
+    font-size: 30px;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+.mb-3,label{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    
+   
+}
+.mb-3,input{
+    margin-top: 20px;
+}
+.mb{
+    margin-top: 20px;
+}
+select{
+    margin-left: 20px;
+    border:solid 2px var(--secondary-text-color);
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 17px;
+    color: var(--secondary-text-color);
+}
+input{
+    border-radius: 6px;
+    border-color: var(--secondary-text-color);
+}
+.form-control{
+    position: relative;
+    height: 30px; /*distance between every feild*/
+     width: 50%;
+    margin-top: 3px;
+    border-radius: 6px; 
+    
+}
+button{
+    color: var(--primary-text-color);
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 6px;
+    background: linear-gradient(to bottom ,#E46600,#EB810C,#F29C17,#F9B722,#FFD12D);
+    border: 2px solid var(--secondary-text-color);
+    margin-bottom: 20px;
+
+}
+button:hover{
+    box-shadow: 0 0 10px #888;
+    transition: ease-in-out 0.5s;
+    /* border: solid #F8EBD6 0.1px; */
+}
+::placeholder{
+    color: var(--secondary-text-color);
+    opacity: 0.4;
+    
+}
+h2{
+    color: var(--accent-color);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.enlist-job{
+    margin-left: 10px;
+}
+.job-c a{
+     font-size: 15px;
+     
+}
+.exper label{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.expr{
+    margin-left: 20px;
+    margin-top: 3px;
+    border-radius: 6px;
+    border: solid 2px var(--secondary-text-color);
+}

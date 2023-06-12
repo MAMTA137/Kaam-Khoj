@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --primary-text-color: #171717;
+    --secondary-text-color: #E46600;
+    --accent-color: #FFD12D;
+    --accent-color-dark: #6B5102;
+    --padding-inline-section: 20px;
+    --background-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins',sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+/* utility classes */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+/* nav bar */
+.main-nav {
+  margin-top: 5px;
+  justify-content: space-between;
+}
+.hover-link {
+  color: var(--accent-color-dark);
+}
+.hover-link:hover{
+  color: var(--secondary-text-color);
+  transition-property: 0.2s ease-out;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-button:hover{
+  background-color: var(--secondary-text-color);  
+   color: var(--accent-color);
+}
+.secondary-button{
+  border: 0.5px solid var(--accent-color-dark);
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--accent-color-dark);
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+    background-color: var(--secondary-text-color);
+    color: var(--accent-color);
+}
+.main-nav {
+    box-shadow: 0px 2px 3px var(--accent-color-dark);
+    padding: 10px;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+.company-logo img {
+  width: auto;
+  height: 100px;
+  margin-left: 10px;
+}
+.nav-links {
+  /* flex-basis: 730px; */
+  justify-content: space-between;
+  font-weight:550;
+  font-size: 20px;
+}
+.nav-links ul{
+  justify-content: end;
+  gap: 40px;
+}
+
+/* Header Part!! */
+.header-section {
+    justify-content: flex-start;
+    background-image: url(woman.jpg);
+    background-size: cover;
+    color: var(--accent-color);
+}
+.header-text{
+    padding-top: 100px;
+    padding-left:100px;
+    color: var(--accent-color);
+}
+
+/* Card Section of the two choices, a lot of manipulation */
+.option-section{
+    padding: 50px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.option-header {
+    text-align: center;
+}
+.option-heading-text {
+    margin-bottom: 20px;
+}
+.option-area{
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* gap: 40px; */
+    margin-top: 20px;
+}
+.option-card {
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    color: var(--accent-color);
+    border-radius: 40px;
+    padding: 50px var(--padding-inline-section) 0;
+    border: solid var(--accent-color-dark) 0.2px;
+}
+.option-card:hover{
+    border: solid var(--secondary-text-color) 0.2px;
+    box-shadow: 0 0 10px var(--accent-color-dark);
+    transition: 0.2s ease-in-out;
+}
+.option-text {
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+.option-text-group {
+    margin-top: 40px;
+}
+.option-button:hover {
+    background-color: var(--accent-color-dark);
+    transition: 0.2s ease-in;
+}
+/* I named them donate buttons while writing the html so let it be donate buttons, they dont function
+as it tho */
+.donate-button {
+    margin-top: 20px;
+    border: var(--accent-color);
+    /* padding-top: 40px; */
+}
+.donate-buttons {
+    background-color: var(--accent-color);
+    font-size: 20px;
+}
+.donate-buttons:hover {
+  color: var(--accent-color);
+}
+
+
+/* BLACK BOX STUFFFF*/
+
+
+.features-section{
+  margin-top: 30px;
+  padding: 50px var(--padding-inline-section) 0;
+  background-color: var(--primary-text-color);
+}
+.features-header {
+  text-align: center;
+  padding-top: 1px;
+  margin-bottom: 20px;
+}
+.features-heading-text {
+  background: linear-gradient(
+           var(--secondary-text-color), var(--accent-color));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+}
+.features-heading-text:hover {
+  background: linear-gradient(
+          to right, #f32170, #ff6b08,
+           #cf23cf, #eedd44);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+}
+.features-area{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.features-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  text-align: center;
+}
+.feature-text {
+  color: var(--accent-color);
+  padding-top: 10px;
+  margin-top: 5px;
+ /* background: linear-gradient(var(--secondary-text-color), var(--accent-color));
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text; */
+}
+.get-started {
+  /* margin-top: 40px; */
+  justify-content: center;
+  margin-left: 425px;
+  border: 0.5px solid var(--accent-color-dark);
+  border-radius: 15px;
+  color: var(--background-color);
+  background: linear-gradient(to bottom ,#E46600,#E46600,#EB810C, #f99d3a,#FFD12D);
+  padding: 12px 12px;
+  transition: 0.2s ease-out;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-size: 25px;
+  font-weight: 550;
+  width: 300px;
+}
+.get-started:hover {
+  background: linear-gradient(
+          to right, #ff6b08, #f32170,
+           #cf23cf);
+}
+
+/* footer */
+footer {
+  padding-block: 80px;
+  background-color: var(--background-color);
+  font-weight:bold;
+}
+.link-coloumn {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px
+}
+.footer-container{
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-link {
+  color: var(--secondary-text-color);
+}
+.footer-link:hover {
+  color: var(--accent-color-dark);
+} 
+h4 {
+  font-size: 20px;
+  color: var(--accent-color-dark);
+}
+.footer-text {
+  font-weight: 500;
+  margin-top: 10px;
+  padding-top: 5px;
+}

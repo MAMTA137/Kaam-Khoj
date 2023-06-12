@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-text-color: #0D3614;
+  --secondary-text-color: #185451;
+  --accent-color: #9ACAA2;
+  --accent-color-dark: #779B7D;
+  --padding-inline-section: 20px;
+  --background-color: #F5F0F6;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+
+.primary-button {
+  background-color: var(--primary-text-color);
+  border-radius: 6px;
+  font-weight: bold;
+  /* we use importnt to make sure it remains white and not black
+  as we predefined it as black */
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primary-button:hover{
+  background-color: var(--secondary-text-color);   
+}
+.secondary-button{
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-button:hover {
+      color: var(--accent-color);
+}
+
+
+/*NAVBAR*/
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.hover-link {
+  color: var(--secondary-text-color);
+}
+.hover-link:hover{
+  color: var(--accent-color);
+  transition-property: 0.2s ease-out;
+}
+
+
+.company-logo img {
+  width: auto;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+  font-weight: bold;
+}
+.nav-links ul{
+  justify-content: end;
+  gap: 40px;
+  margin-left: 43rem;
+    margin-top: -46px;
+}
+
+/* sidebar*/
+.sidebar{
+  position: absolute;
+  left: -250px;
+  width: 250px;
+  height: 170%;
+  background: var(--secondary-text-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar header{
+  font-size: 17px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+
+.photo img{
+  height: 150px;
+  margin-left: 43px;
+  
+}
+
+.sidebar ul{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  line-height: 65px;
+  font-size: 17px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-top: 3rem;
+}
+
+#check{
+  display: none;
+}
+
+
+.options img{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 35px;
+  padding: 6px 12px;
+  cursor: pointer;
+
+}
+
+.cancel img{
+  position: absolute;
+  margin-left: 206px;
+  margin-top: -72px;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+
+} 
+
+#check{
+  display: none;
+}
+
+
+/* client Profiles*/
+.client-area{
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-block: 30px;
+  gap: 20px;
+}
+.client-card {
+  padding:20px var(--padding-inline-section) 0;
+  margin: auto;
+  text-align: center;
+  max-width: 30%;
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 20px;
+  background: var(--ternary-color);
+  background-size: cover;
+  transition: 0.2s ease-out;
+}
+.client-card:hover {
+  border: solid #F8EBD6 0.2px;
+  box-shadow: 0 0 10px #888;
+  transition: ease-in-out 0.5s;
+}
+.client-text{
+  flex-direction: column;
+  margin: auto;
+}
+
+#check:checked ~ section{
+  margin-left: 250px;
+}

@@ -1,0 +1,276 @@
+
+:root{
+    --primary-text-color: #0D3614;
+    --secondary-text-color: #185451;
+    --accent-color: #9ACAA2;
+    --accent-color-dark: #779B7D;
+    
+    --background-color: #F5F0F6;
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+
+  }
+ body{
+    background-size: cover;
+   
+ 
+}
+h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  ul {
+    list-style: none;
+  }
+  /* utility classes */
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .small-bold-text {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+  }
+  /* nav bar */
+  .main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .hover-link {
+    color: var(--secondary-text-color);
+  }
+  .hover-link:hover{
+    color: var(--accent-color);
+    transition-property: 0.2s ease-out;
+  }
+  .primary-button {
+    background-color: var(--primary-text-color);
+    border-radius: 6px;
+    font-weight: bold;
+    /* we use importnt to make sure it remains white and not black
+    as we predefined it as black */
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+  }
+  .primary-button:hover{
+    background-color: var(--accent-color-dark);   
+  }
+  .secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+  }
+  .secondary-button:hover {
+        color: var(--accent-color-dark);
+  }
+  .main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .company-logo img {
+    width: auto;
+    height: 100px;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    flex-basis: 730px;
+    font-weight: bold;
+  }
+  .nav-links ul{
+    justify-content: end;
+    gap: 40px;
+  }
+a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+  
+ul{
+     list-style: none;
+    
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 10px;
+    max-width: 1000px;  /*1100  width of container,we given this size to container ki size can get small but not larger than 1180 */
+    margin-inline:  auto;    /* to give left right margin ,auto diya toh container will be in center */
+    padding-inline: var(--padding-inline-section);
+    
+    
+  
+  }
+  .flex{
+    display: flex;
+    
+    align-items: flex-start;
+  
+  
+  }
+  .hover-link{
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    align-items: center;
+  }
+  .hover-link1{
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    align-items: center;
+  }
+  .hover-link:hover{
+    text-decoration: none;
+    color: var(--accent-color-dark);
+    
+  }
+.main-nav{
+    text-decoration: none;
+    
+    margin-top: 30px;
+    /*background-color: aquamarine;*/
+    justify-content: space-between;  /* space between logo and nav links*/
+  }
+  
+   
+  .company-logo img{
+   
+    max-height: 100px;
+   
+  }
+  .nav-links{
+    flex-basis: 730px;  /* can define the width of flex*/
+    align-items: center;
+   
+  }
+  
+  .nav-links ul{
+    justify-content: end;
+    gap: 40px;  /*gap between nav links*/
+  }
+  
+  
+  
+label{
+    color: #185451;
+    font-weight: 500;
+    
+}
+select{
+    color: var(--primary-text-color);
+    background-color:var(--accent-color);
+    /* font-weight: 500; */
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #185451;
+ 
+}
+.form-title {
+    display: flex;
+    justify-content: center;
+    color: var(--background-color);
+    border-radius: 10px;
+    background-color: var(--secondary-text-color);
+}
+
+.text{
+    color: var(--primary-text-color);
+}
+.mb-3{
+    color: #185451;
+    font-weight: 500;
+}
+/* .mb-3 button{
+    background-color: var(--secondary-text-color);
+    color: var(--accent-color);
+    border-color:var(--accent-color);
+    border-radius: 20px;
+    height: 30px;
+   
+   
+} */
+
+.form{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    align-items: center;
+}
+.form1{
+    width: 50vw;
+    height: 80vh;
+}
+.main{
+    width: 50vw;
+   
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+#gender{
+    margin: 20px;
+}
+.form-check{
+    margin: 0px 10px;
+}
+
+.form-container{
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 2em;
+    border-radius: 15px;
+    margin: 30px auto;
+   
+}
+
+.btn-btn-primary{
+    background-color: var(--secondary-text-color);
+    color: var(--accent-color);
+    border-color:var(--accent-color);
+    border-radius: 10px;
+    width: 80px ;
+    height: 40px;
+   
+   
+}
+
+input[value=CSS]{
+  text-align: center;
+  justify-content: center;
+  transform: translateY(50%);
+}
+input[value=HTML]{
+  
+  text-align: center;
+  justify-content: center;
+  transform: translateY(50%);
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+
+}
+
+:root {
+  --primary-text-color: #171717;
+  --secondary-text-color: #E46600;
+  --accent-color: #FFD12D;
+  --accent-color-dark: #6B5102;
+  --padding-inline-section: 20px;
+  --background-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(to bottom, rgba(242, 156, 23, 0.5) 0%, rgba(255, 209, 45,0.7) 100%), url("static\download.jfif") ; */
+  /* background: linear-gradient(to bottom,#F29C17,#F9B722,#FFD12D , url("static\download.jfif") ; */
+  background: linear-gradient(to bottom, rgba(228, 102, 0, 1) 0%, rgba(255, 209, 45, 0.7) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+
+
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.fle {
+  display: flex;
+  align-items: center;
+}
+
+/* nav bar */
+.main-nav {
+  /* margin-top: 5px; */
+  justify-content: space-between;
+  max-width: 2000px;
+}
+
+.hover-link {
+
+  font-weight: 600;
+  color: var(--accent-color-dark);
+}
+
+.hover-link:hover {
+  color: var(--secondary-text-color);
+  transition-property: 0.2s ease-out;
+}
+
+.primary-button {
+  /* height: 30px; */
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+  background-color: var(--secondary-text-color);
+  color: var(--accent-color);
+}
+
+.secondary-button {
+
+
+  border: 0.5px solid var(--accent-color-dark);
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--accent-color-dark);
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+
+  background-color: var(--secondary-text-color);
+  color: var(--accent-color);
+}
+
+.main-nav {
+  box-shadow: 0px 2px 3px var(--accent-color-dark);
+  padding: 10px;
+
+  background-color: #FFFFFF;
+}
+
+.company-logo img {
+  width: auto;
+  height: 100px;
+  margin-left: 10px;
+}
+.nav-links {
+  /* flex-basis: 730px; */
+  justify-content: space-between;
+  font-weight: 550;
+  font-size: 20px;
+}
+
+.nav-links ul {
+  justify-content: end;
+  gap: 30px;
+}
+
+/*nav nar*/
+
+
+.container {
+  max-width: 700px;
+  /* height: 400px; */
+  /* background: linear-gradient(to bottom ,#F9B722,#FCC428,#FFCE2C,#FFD12D); */
+  /* border: solid 3px var(--secondary-text-color); */
+  border-radius: 10px;
+  /* background-color: var(--primary-text-color); */
+  margin-inline: auto;
+  margin-bottom: 20px;
+  /* to give left right margin ,auto diya toh container will be in center */
+  padding-inline: 20px;
+  /* position: relative; */
+  /*space left right se box ke andar,space of 20px*/
+}
+.header-text{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.cards {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding-left: 30px; */
+  gap: 40px;
+  
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-color: var(--background-color);
+  border-radius: 40px;
+  font-size: 24px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  transition: 0.2s ease-out;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.circle-container {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #333;
+  border-color: #171717;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* footer */
+.con {
+  max-width: 100%;
+  /* margin-top: 20px; */
+  /* background: linear-gradient(to bottom ,#F9B722,#FCC428,#FFCE2C,#FFD12D); */
+  /* border: solid 3px var(--secondary-text-color); */
+  /* border-radius: 10px; */
+  background-color: var(--primary-text-color);
+  /* to give left right margin ,auto diya toh container will be in center */
+  padding-inline: 20px;
+}
+
+footer {
+  /* padding-top: 20px; */
+  /* padding-block: 30px; */
+  background-color: var(--background-color);
+  font-weight: bold;
+}
+
+.link-coloumn {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px
+}
+
+.footer-container {
+  padding: 100px;
+
+
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: var(--secondary-text-color);
+}
+
+.footer-link:hover {
+  color: var(--accent-color-dark);
+}
+
+h4 {
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
+.footer-text {
+  font-weight: 500;
+  margin-top: 10px;
+  padding-top: 5px;
+  color: var(--secondary-text-color);
+}

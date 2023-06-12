@@ -1,0 +1,152 @@
+/*things to remember
+1 login button border should be invisible
+2 "already have an account " should be small letter should be less heightlighted
+3  link should be different color but line i.e text decoration should be underlined only on hover
+4  remember to give hover to login button
+5  */
+
+
+/* Google Fonts - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400;500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif; /*Poppins font is for bold lettering*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-text-color: #171717;
+    --secondary-text-color: #E46600;
+    --accent-color: #FFD12D;
+    --accent-color-dark: #6B5102;
+    --padding-inline-section: 20px;
+    --background-color: #FFFFFF;
+}
+
+.container{
+    height: 100vh;  /*10px = 1vh*//*if 100% toh jitne part likha hai pura cover karega , vh is used for large area*/
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, rgba(242, 156, 23, 0.5) 0%, rgba(255, 209, 45,0.7) 100%), url("static\\woman.jpg") ;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
+    align-items: center; /*vertically center*/
+    justify-content: center; /*horizontal center*/
+    background-color: var(--primary-text-color) ;
+    
+    column-gap: 30px;
+}
+
+.form{
+    max-width: 430px;
+    width: 100%;
+    position: absolute;  /*bcoz of js ;to show only one form*/
+    padding: 30px ; /*margin won't work here */
+    border-radius: 6px;
+    background: #FFF;
+    border: solid 2px var(--secondary-text-color);
+}
+
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .feild /*dot after form so sare form ke feild pattern pe work karega*/{
+    position: relative;
+    height: 50px; /*distance between every feild*/
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+    
+}
+
+.feild input,button{
+    height: 100%; /*email box mai changes*/
+    width: 100%;  /*email box mai changes*/
+    border: none; /*border not visible of input and button*/
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.feild input{
+    padding: 0 15px ;
+    outline: none;
+    border: 1px solid #cacaca; /*border of input visible banaya*/
+}
+.feild input:focus{
+    border-bottom-width: 2px; /*focus on hovering*/
+
+}
+.feild button{
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    background-color: var(--primary-text-color);
+}
+.feild button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span, a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form-link a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:400px) {  /*for better response ,do understand more betterly*/
+    .form{
+        padding: 15px 10px;
+    }
+    
+}
+
+
+.mb-3,label{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    
+   
+}
+.mb-3,input{
+    margin-top: 20px;
+}
+.mb{
+    margin-top: 20px;
+}
+input{
+    border-radius: 6px;
+    border-color: var(--secondary-text-color);
+}
+.form-control{
+    position: relative;
+    height: 30px; /*distance between every feild*/
+    width: 50%;
+    margin-top: 3px;
+    border-radius: 6px;
+    width: 100%;
+    
+}
+::placeholder{
+    color: var(--secondary-text-color);
+    opacity: 0.4;
+    font-size: 15px;
+    
+}
