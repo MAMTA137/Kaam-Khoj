@@ -34,11 +34,14 @@ Kaam Khoj is a platform designed to connect blue-collar workers in Mumbai with p
 ![image](https://github.com/AyeshaNagdawala/Kaam-Khoj/assets/111572744/a7efabf1-f76a-4922-865e-c892b5814a71)
 ## Client Dashboard- Check Quotations
 ![image](https://github.com/AyeshaNagdawala/Kaam-Khoj/assets/111572744/03fec4f4-fcbb-4672-9c3e-90bd90626a29)
-## Client Dashboard- My work / Update Work Completion Status & Rate when work is Commpleted
+## Client Dashboard- My work / Update Work Completion Status & Rate when work is Completed
 ![image](https://github.com/AyeshaNagdawala/Kaam-Khoj/assets/111572744/8d72ef6a-ceb6-42b1-a2ad-f6999f82e66c)
 
 
+## Team 
 
-
+left->right: Meetali kapse, Mamta Gupta, Shagun Gupta, Ayesha Nagdawala
+-----------------------------------------------------------------------------
+![WhatsApp Image 2023-08-24 at 4 33 11 PM](https://github.com/MAMTA137/Kaam-Khoj/assets/102024852/19c162fb-ac5d-4169-92e3-528a3344a760)
 
 
